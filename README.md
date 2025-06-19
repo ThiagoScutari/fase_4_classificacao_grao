@@ -46,21 +46,21 @@ Desenvolver e comparar modelos de aprendizado de máquina com foco na **classifi
 - Os modelos **SVM e Random Forest** apresentaram os melhores resultados em termos de acurácia e F1-score.
 - GridSearchCV ajudou a melhorar ainda mais o desempenho de alguns classificadores, ajustando hiperparâmetros como:
 
-param_knn = {
-    'knn__n_neighbors': [3, 5, 7, 9],
-    'knn__weights': ['uniform', 'distance'],
-    'knn__p': [1, 2]  # p=1: Manhattan, p=2: Euclidean
-}
-param_logreg = {
-    'logreg__C': [0.01, 0.1, 1, 10],
-    'logreg__penalty': ['l2'],
-    'logreg__solver': ['lbfgs'],
-}
-param_clf = {
-    'n_estimators': [50, 100, 200],
-    'max_depth': [None, 5, 10],
-    'min_samples_split': [2, 5],
-}
+- param_knn = {  
+     'knn__n_neighbors': [3, 5, 7, 9],  
+     'knn__weights': ['uniform', 'distance'],  
+     'knn__p': [1, 2]  # p=1: Manhattan, p=2: Euclidean  
+}  
+- param_logreg = {  
+     'logreg__C': [0.01, 0.1, 1, 10],  
+     'logreg__penalty': ['l2'],  
+     'logreg__solver': ['lbfgs'],  
+}  
+- param_clf = {  
+     'n_estimators': [50, 100, 200],  
+     'max_depth': [None, 5, 10],  
+     'min_samples_split': [2, 5],  
+}  
 
 ---
 
